@@ -64,7 +64,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="62p_stamp_rug_lg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="f6o-YI-yl9">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="224" y="167" width="80" height="80"/>
+                                    <rect key="frame" x="224" y="72" width="80" height="80"/>
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xcH-uF-eVz">
@@ -72,7 +72,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="273" width="288" height="30"/>
+                                    <rect key="frame" x="16" y="229" width="288" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Message" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hQD-A7-xSp">
@@ -80,7 +80,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="317" width="288" height="30"/>
+                                    <rect key="frame" x="16" y="273" width="288" height="30"/>
                                 </variation>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1y-VT-Q5g">
@@ -89,7 +89,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="82" width="288" height="71"/>
+                                    <rect key="frame" x="16" y="81" width="201" height="79"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lck-mt-cWh">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="17" y="187" width="200" height="30"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiF-nF-We3">
@@ -99,7 +108,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="217" width="200" height="30"/>
+                                    <rect key="frame" x="224" y="165" width="80" height="52"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MOw-wY-Sqh"/>
@@ -113,6 +122,7 @@
                                 <exclude reference="xcH-uF-eVz"/>
                                 <exclude reference="hQD-A7-xSp"/>
                                 <exclude reference="b1y-VT-Q5g"/>
+                                <exclude reference="lck-mt-cWh"/>
                                 <exclude reference="PiF-nF-We3"/>
                             </mask>
                         </variation>
@@ -122,6 +132,7 @@
                                 <include reference="xcH-uF-eVz"/>
                                 <include reference="hQD-A7-xSp"/>
                                 <include reference="b1y-VT-Q5g"/>
+                                <include reference="lck-mt-cWh"/>
                                 <include reference="PiF-nF-We3"/>
                             </mask>
                         </variation>
@@ -132,6 +143,7 @@
                         <outlet property="enterNameTextField" destination="xcH-uF-eVz" id="WwO-TX-0ai"/>
                         <outlet property="mailButton" destination="PiF-nF-We3" id="eLM-xk-ztC"/>
                         <outlet property="messageLabel" destination="b1y-VT-Q5g" id="DD9-Pq-rQS"/>
+                        <outlet property="nameLabel" destination="lck-mt-cWh" id="cY2-0B-uOn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
